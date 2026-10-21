@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="La Culinaria">
+    <meta name="description" content="Formulario para solicitar una reserva en La Culinaria.">
+    <meta name="keywords" content="La Culinaria, reserva, restaurante">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitar reserva - La Culinaria</title>
+</head>
+<body>
+    <header><h1>Haz una reserva</h1></header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Volver al repositorio</a></li>
+            <li><a href="laculinaria.html">Volver al menú principal</a></li>
+        </ul>
+    </nav>
+    <main>
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Datos de la reserva</legend>
+                <p><label for="nombre">Su nombre:</label><br>
+                <input type="text" id="nombre" name="nombre" required></p>
+                <p><label for="clientes">Número de clientes:</label><br>
+                <input type="number" id="clientes" name="clientes" min="1" max="30" required></p>
+                <p><label for="correo">Su correo electrónico:</label><br>
+                <input type="email" id="correo" name="correo" required></p>
+                <p><label for="telefono">Su teléfono:</label><br>
+                <input type="tel" id="telefono" name="telefono" required></p>
+                <p><label for="fecha">Fecha de la reserva:</label><br>
+                <input type="date" id="fecha" name="fecha" required></p>
+                <p><label for="hora">Hora de la reserva:</label><br>
+                <input type="time" id="hora" name="hora" required></p>
+                <p><label for="mensaje">Su mensaje:</label><br>
+                <textarea id="mensaje" name="mensaje" rows="4" cols="45" maxlength="500"></textarea></p>
+                <button type="submit">Solicitar reserva</button>
+                <button type="reset">Limpiar datos</button>
+            </fieldset>
+        </form>
+        <p>El envío de este formulario es una demostración y no confirma una reserva real.</p>
+    </main>
+    <footer><p>La Culinaria.</p></footer>
+</body>
+</html>

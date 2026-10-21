@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="La Culinaria">
+    <meta name="description" content="Formulario de contacto con el restaurante La Culinaria.">
+    <meta name="keywords" content="La Culinaria, contacto, mensaje">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - La Culinaria</title>
+</head>
+<body>
+    <header><h1>Envíenos su mensaje</h1></header>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Volver al repositorio</a></li>
+            <li><a href="laculinaria.html">Volver al menú principal</a></li>
+        </ul>
+    </nav>
+    <main>
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Formulario de contacto</legend>
+                <p><label for="nombre">Su nombre:</label><br>
+                <input type="text" id="nombre" name="nombre" required></p>
+                <p><label for="correo">Su correo electrónico:</label><br>
+                <input type="email" id="correo" name="correo" required></p>
+                <p><label for="telefono">Su teléfono:</label><br>
+                <input type="tel" id="telefono" name="telefono"></p>
+                <p><label for="asunto">Asunto:</label><br>
+                <input type="text" id="asunto" name="asunto" required></p>
+                <p><label for="mensaje">Su mensaje:</label><br>
+                <textarea id="mensaje" name="mensaje" rows="8" cols="60" maxlength="500" required></textarea></p>
+                <button type="submit">Enviar</button>
+                <button type="reset">Cancelar</button>
+            </fieldset>
+        </form>
+        <p>Este formulario es una demostración: no envía mensajes a un correo real.</p>
+    </main>
+    <footer><p>La Culinaria</p></footer>
+</body>
+</html>

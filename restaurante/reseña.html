@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="La Culinaria">
+    <meta name="description" content="Formulario para dejar una reseña sobre un plato de La Culinaria.">
+    <meta name="keywords" content="La Culinaria, reseña, opinión, platos">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reseña de un plato - La Culinaria</title>
+</head>
+<body>
+    <header><h1>Deja una reseña de un plato</h1></header>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Volver al restaurante</a></li>
+            <li><a href="laculinaria.html">Volver al menú principal</a></li>
+        </ul>
+    </nav>
+    <main>
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Tu opinión</legend>
+                <p><label for="plato">Elige el plato:</label><br>
+                <select id="plato" name="plato" required>
+                    <option value="">Selecciona un plato</option>
+                    <option value="tortilla">Tortilla de patatas</option>
+                    <option value="carbonara">Pasta carbonara</option>
+                    <option value="pizza">Pizza trufada con boletus y huevo poché</option>
+                </select></p>
+                <p><label for="nombre">Nombre de quien realiza la reseña:</label><br>
+                <input type="text" id="nombre" name="nombre" required></p>
+                <p><label for="resena">Reseña del plato:</label><br>
+                <textarea id="resena" name="resena" rows="6" cols="50" required></textarea></p>
+                <p><label for="valoracion">Valoración:</label><br>
+                <select id="valoracion" name="valoracion" required>
+                    <option value="">Selecciona una valoración</option>
+                    <option value="5">5 - Excelente</option>
+                    <option value="4">4 - Muy bueno</option>
+                    <option value="3">3 - Bueno</option>
+                    <option value="2">2 - Mejorable</option>
+                    <option value="1">1 - Malo</option>
+                </select></p>
+                <button type="submit">Enviar reseña</button>
+                <button type="reset">Limpiar</button>
+            </fieldset>
+        </form>
+        <p>La reseña; para guardarla haría falta programar el envío.</p>
+    </main>
+    <footer><p>La Culinaria</p></footer>
+</body>
+</html>
