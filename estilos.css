@@ -16,10 +16,46 @@ color: #ffffff;
 
 
 .SOR{
-
-  color:rebeccapurple;
-  background-color:yellow;
-
-
-
+  color:yellow;
+  background-color:rebeccapurple;
 }
+
+.APW{
+ color:green;
+ background-color:black ;
+}
+
+.OPW{
+  color:black;
+  background-color:cyan;
+}
+
+.SER{
+  color:maroon;
+  background-color:beige;  
+}
+
+
+.POI {
+    color: rgb(201, 174, 255);
+    background-color:gray;
+}
+
+.IPE{
+   color:yellowgreen;
+   background-color: peru;
+}
+
+
+.ING{
+   color:rgb(253, 250, 51);
+   background-color: olive;
+}
+
+
+
+.SGI{
+   color:pink;
+   background-color: purple;
+}
+
