@@ -1,5 +1,25 @@
-body{
+h1{
 
-  color:blue
+  text-align: center;
+
+  background-color: rgb(0, 106, 192)
+}
+
+ul{
+text-align: center;
+
+background-color: rgb(0, 62, 133);
+
+color: #ffffff;
+
+}
+
+
+.SOR{
+
+  color:rebeccapurple;
+  background-color:yellow;
+
+
 
 }
