@@ -7,20 +7,22 @@
     <meta name="keywords" content="formularios, inscripción, cuestionario, HTML">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formularios de ejemplo</title>
+    <link rel="stylesheet" type="text/css" href="./estilos.css">
 </head>
 <body>
     <header><h1>Formularios de ejemplo</h1></header>
-    <nav>
+    <nav class="barra-volver">
         <ul>
             <a href="index.html">Volver al repositorio</a>
             
         </ul>
     </nav>
     <main>
-        <h2>1. Hoja de inscripción</h2>
-        <form action="#" method="post">
-            <fieldset>
+        <h2 class="titulo-inscripcion">1. Hoja de inscripción</h2>
+        <form action="#" method="post" class="form-inscripcion">
+            <fieldset class="caja-gris">
                 <legend>Datos personales</legend>
+              <div class="grid-datos">
                 <p><label for="nombre1">Nombre:</label><br><input type="text" id="nombre1" name="nombre" required></p>
                 <p><label for="apellidos">Apellidos:</label><br><input type="text" id="apellidos" name="apellidos" required></p>
                 <p><label for="dni">DNI:</label><br><input type="text" id="dni" name="dni"></p>
@@ -31,71 +33,82 @@
                     </select>
                 </p>
                 <p><label for="nacimiento">Fecha de nacimiento:</label><br><input type="date" id="nacimiento" name="nacimiento"></p>
-                <p><label for="direccion">Dirección:</label><br><input type="text" id="direccion" name="direccion"></p>
+                <p class="col-doble"><label for="direccion">Dirección:</label><br><input type="text" id="direccion" name="direccion"></p>
                 <p><label for="postal">Código postal:</label><br><input type="text" id="postal" name="postal" maxlength="5"></p>
+               </div>
             </fieldset>
-            <fieldset>
+
+            <fieldset class="caja-salmon">
                 <legend>Forma de acceso</legend>
                 <p><input type="radio" id="directo" name="acceso" value="directo"><label for="directo">Directo</label></p>
-                <p><input type="radio" id="bachillerato" name="acceso" value="bachillerato"><label for="bachillerato">Bachillerato</label> <label for="modalidad">Modalidad:</label> <input type="text" id="modalidad" name="modalidad"></p>
-                <p><input type="radio" id="experimental" name="acceso" value="experimental"><label for="experimental">Experimental</label></p>
-                <p><input type="radio" id="cou" name="acceso" value="cou"><label for="cou">COU. Opción:</label> <input type="text" id="opcion" name="opcion"></p>
-                <p><input type="radio" id="fp2" name="acceso" value="fp2"><label for="fp2">FP2</label></p>
-                <p><input type="radio" id="otros" name="acceso" value="otros"><label for="otros">Otros (especificar):</label> <input type="text" id="otros-texto" name="otros-texto"></p>
-                <p><input type="radio" id="prueba" name="acceso" value="prueba"><label for="prueba">Prueba libre</label></p>
+                <p class="identado"><input type="radio" id="bachillerato" name="acceso" value="bachillerato"><label for="bachillerato">Bachillerato</label> <label for="modalidad">Modalidad:</label> <input type="text" id="modalidad" name="modalidad"></p>
+                <p class="identado"><input type="radio" id="experimental" name="acceso" value="experimental"><label for="experimental">Experimental</label></p>
+                <p class="identado"><input type="radio" id="cou" name="acceso" value="cou"><label for="cou">COU. Opción:</label> <input type="text" id="opcion" name="opcion"></p>
+                <p class="identado"><input type="radio" id="fp2" name="acceso" value="fp2"><label for="fp2">FP2</label></p>
+                <p class="identidos"><input type="radio" id="otros" name="acceso" value="otros"><label for="otros">Otros (especificar):</label> <input type="text" id="otros-texto" name="otros-texto"></p>
+                <p class="identado"><input type="radio" id="prueba" name="acceso" value="prueba"><label for="prueba">Prueba libre</label></p>
             </fieldset>
-            <fieldset>
+
+            <fieldset class="caja-granate">
                 <legend>Documentos adjuntados</legend>
+                <div class="grid-docs">
                 <p><input type="checkbox" id="dni-adjunto" name="documentos" value="dni"><label for="dni-adjunto">Fotocopia del DNI</label></p>
                 <p><input type="checkbox" id="certificado" name="documentos" value="certificado"><label for="certificado">Certificado académico</label></p>
-                <p><input type="checkbox" id="otros-docs" name="documentos" value="otros"><label for="otros-docs">Otros documentos</label> <input type="text" name="otros-documentos"></p>
+                <p class="col-doble"><input type="checkbox" id="otros-docs" name="documentos" value="otros"><label for="otros-docs">Otros documentos</label> <input type="text" name="otros-documentos"></p>
+                </div>
             </fieldset>
-            <p><button type="submit">Enviar solicitud</button> <button type="reset">Limpiar datos</button></p>
+            <p class="botones-inscripcion"><button type="submit">Enviar solicitud</button> <button type="reset">Limpiar datos</button></p>
         </form>
 
-        <h2>2. Cuestionario de inscripción en un club</h2>
-        <form action="#" method="post">
-            <fieldset>
+        <h2 class="titulo-club">2. Cuestionario de inscripción en un club</h2>
+        <form action="#" method="post" class="form-club">
+            <fieldset class="caja-ocre">
                 <legend>Datos personales</legend>
-                <p><label for="nombre2">Nombre:</label><br><input type="text" id="nombre2" name="nombre" required></p>
-                <p><label for="domicilio">Domicilio:</label><br><input type="text" id="domicilio" name="domicilio" placeholder="Calle, número y localidad"></p>
-                <p><label for="pais">País de origen:</label><br>
+                <p><label for="nombre2" class="etiqueta-fija">Nombre:</label><br><input type="text" id="nombre2" name="nombre" class="input-largo" required></p>
+                <p><label for="domicilio" class="etiqueta-fija">Domicilio:</label><br><input type="text" id="domicilio" name="domicilio" placeholder="Calle, número y localidad" class="input-largo"></p>
+                <p><label for="pais" class="etiqueta-fija">País de origen:</label><br>
                     <select id="pais" name="pais"><option>España</option><option>Portugal</option><option>Francia</option><option>Italia</option><option>Otro</option></select>
                 </p>
-                <p><label for="fecha2">Fecha de nacimiento:</label><br><input type="date" id="fecha2" name="fecha"></p>
-                <p><label for="correo2">Correo electrónico:</label><br><input type="email" id="correo2" name="correo"></p>
-                <p><label for="telefono2">Teléfono:</label><br><input type="tel" id="telefono2" name="telefono"></p>
+                <p><label for="fecha2" class="etiqueta-fija">Fecha de nacimiento:</label><br><input type="date" id="fecha2" name="fecha"></p>
+                <p><label for="correo2" class="etiqueta-fija">Correo electrónico:</label><br><input type="email" id="correo2" name="correo" class="input-medio"></p>
+                <p><label for="telefono2" class="etiqueta-fija">Teléfono:</label><br><input type="tel" id="telefono2" name="telefono" class="input-corto"></p>
                 <p>Estado civil:<br>
                     <input type="radio" id="soltero" name="estado-civil" value="soltero"><label for="soltero">Soltero/a</label>
                     <input type="radio" id="casado" name="estado-civil" value="casado"><label for="casado">Casado/a</label>
                     <input type="radio" id="separado" name="estado-civil" value="separado"><label for="separado">Separado/a</label>
                     <input type="radio" id="viudo" name="estado-civil" value="viudo"><label for="viudo">Viudo/a</label>
                 </p>
-                <p>Sexo:<br>
+                <p><span class="etiqueta-fija">>Sexo:</span>
                     <input type="radio" id="hombre" name="sexo" value="hombre"><label for="hombre">Hombre</label>
                     <input type="radio" id="mujer" name="sexo" value="mujer"><label for="mujer">Mujer</label>
                 </p>
             </fieldset>
-            <fieldset>
+
+
+            <fieldset class="caja-amarilla">
                 <legend>Otra información de interés</legend>
-                <p><label for="dispositivos">Selecciona los componentes electrónicos con los que trabajas:</label><br>
+                <p class="fila-dispositivos"><label for="dispositivos" class="negrita">Selecciona los componentes electrónicos con los que trabajas:</label><br>
                     <select id="dispositivos" name="dispositivos" multiple size="4">
                         <option>Móvil</option><option>Tablet</option><option>Ordenador</option><option>Ebook</option>
                     </select>
                 </p>
-                <p>Selecciona tus actividades favoritas:</p>
-                <p><input type="checkbox" id="deporte" name="actividades" value="deporte"><label for="deporte">Hacer deporte</label></p>
-                <p><input type="checkbox" id="amigos" name="actividades" value="amigos"><label for="amigos">Salir con mis amigos</label></p>
-                <p><input type="checkbox" id="series" name="actividades" value="series"><label for="series">Ver series y películas</label></p>
-                <p><input type="checkbox" id="senderismo" name="actividades" value="senderismo"><label for="senderismo">Realizar rutas de senderismo</label></p>
-                <p><input type="checkbox" id="cine" name="actividades" value="cine"><label for="cine">Ir al cine</label></p>
-                <p><input type="checkbox" id="musica" name="actividades" value="musica"><label for="musica">Escuchar música</label></p>
-                <p><label for="motivo">Explica brevemente por qué deseas ingresar en el club:</label><br><textarea id="motivo" name="motivo" rows="5" cols="50"></textarea></p>
-                <p><label for="pelicula">Elige o escribe tu película favorita:</label><br><input type="text" id="pelicula" name="pelicula"></p>
+                <p class="negrita">Selecciona tus actividades favoritas:</p>
+                <div class="grid-actividades">
+                  <p><input type="checkbox" id="deporte" name="actividades" value="deporte"><label for="deporte">Hacer deporte</label></p>
+                  <p><input type="checkbox" id="amigos" name="actividades" value="amigos"><label for="amigos">Salir con mis amigos</label></p>
+                  <p><input type="checkbox" id="series" name="actividades" value="series"><label for="series">Ver series y películas</label></p>
+                  <p><input type="checkbox" id="senderismo" name="actividades" value="senderismo"><label for="senderismo">Realizar rutas de senderismo</label></p>
+                  <p><input type="checkbox" id="cine" name="actividades" value="cine"><label for="cine">Ir al cine</label></p>
+                  <p><input type="checkbox" id="musica" name="actividades" value="musica"><label for="musica">Escuchar música</label></p>
+                </div>
+                <p><label for="motivo" class="negrita">Explica brevemente por qué deseas ingresar en el club:</label><br><textarea id="motivo" name="motivo" rows="5" cols="50"></textarea></p>
+                <p><label for="pelicula" class="negrita">Elige o escribe tu película favorita:</label><br><input type="text" id="pelicula" name="pelicula"></p>
             </fieldset>
-            <p><button type="submit">Enviar</button> <button type="reset">Cancelar</button></p>
+
+
+            <p class="botones-club"><button type="submit">Enviar</button> <button type="reset">Cancelar</button></p>
         </form>
     </main>
-    <footer><p>Actividad de formularios</p></footer>
+    <footer class="pie-formularios"><p>Actividad de formularios</p></footer>
 </body>
 </html>

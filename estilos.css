@@ -208,8 +208,6 @@ body.culinaria{
 .culinaria nav ul {
     background-color: #6e2b32;
 }
-
-
 .culinaria .boton-volver {
     display: block;
     width: fit-content;
@@ -313,4 +311,248 @@ body.culinaria{
     gap: 10px 18px;           
     padding: 12px;
     font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+/* Quita la franja azul del pie de página específico de La Culinaria */
+footer.culinaria {
+    background-color: transparent;
+}
+
+
+/* Título principal centrado del primer formulario */
+.titulo-inscripcion {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+/* Estilo común de los bloques fieldset del primer formulario */
+.form-inscripcion fieldset {
+    border: 1px solid rgb(0, 0, 0);
+    padding: 15px;
+    margin-bottom: 12px;
+}
+
+/* Etiquetas legend en caja blanca con borde negro */
+.form-inscripcion legend {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(0, 0, 0);
+    padding: 2px 8px;
+    font-size: 14px;
+}
+
+/* Fondo gris para Datos personales */
+.caja-gris {
+    background-color: rgb(179, 179, 179);
+}
+
+/* Fondo salmón para Forma de acceso */
+.caja-salmon {
+    background-color: rgb(255, 184, 131);
+}
+
+/* Fondo granate suave para Documentos adjuntados */
+.caja-granate {
+    background-color: rgb(160, 113, 113);
+}
+
+/* Rejilla de 3 columnas para alinear los campos de Datos personales */
+.grid-datos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px 15px;
+    font-size: 14px;
+}
+
+/* Hace que el campo Dirección ocupe el ancho de dos columnas */
+.col-doble {
+    grid-column: span 2;
+}
+
+/* Ancho completo para los cuadros de texto y select de Datos personales */
+.grid-datos input,
+.grid-datos select {
+    width: 100%;
+    padding: 3px;
+    margin-top: 2px;
+    border: 1px solid rgb(130, 130, 130);
+    background-color: rgb(255, 255, 255);
+}
+
+/* Separación vertical entre las opciones de Forma de acceso */
+.caja-salmon p {
+    margin: 4px 0 4px 25px;
+    font-size: 14px;
+}
+
+/* Sangría hacia la derecha para las subopciones de Directo */
+.caja-salmon p.indentado {
+    margin-left: 55px;
+}
+
+/* Rejilla de 2 columnas para las casillas de Documentos adjuntados */
+.grid-docs {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 8px;
+    font-size: 14px;
+}
+
+/* Centrado de los botones del primer formulario */
+.botones-inscripcion {
+    text-align: center;
+    margin: 15px 0 45px 0;
+}
+
+/* Diseño rectangular clásico de los botones del primer formulario */
+.botones-inscripcion button {
+    padding: 5px 12px;
+    font-size: 15px;
+    margin: 0 3px;
+    cursor: pointer;
+}
+
+
+
+/* --- ESTILOS DEL SEGUNDO FORMULARIO (CUESTIONARIO DEL CLUB) --- */
+
+/* Título en cursiva con sombra suave del segundo formulario */
+.titulo-club {
+    text-align: center;
+    font-style: italic;
+    font-size: 20px;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.25);
+}
+
+/* Diseño base de las cajas asimétricas con sombra del segundo formulario */
+.form-club fieldset {
+    border: none;
+    border-radius: 35px 0 35px 0;
+    padding: 20px 30px;
+    margin-bottom: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.35);
+    font-size: 14px;
+}
+
+/* Etiquetas legend alineadas a la derecha y en cursiva */
+.form-club legend {
+    float: right;
+    font-style: italic;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+/* Fondo ocre dorado para el bloque de Datos personales */
+.caja-ocre {
+    background-color: rgb(226, 173, 80);
+}
+
+/* Fondo amarillo cálido para Otra información de interés */
+.caja-amarilla {
+    background-color: rgb(201, 151, 51);
+}
+
+/* Separación vertical entre cada fila de Datos personales */
+.caja-ocre p {
+    clear: both;
+    margin-bottom: 7px;
+}
+
+/* Etiquetas alineadas a la derecha y en negrita en Datos personales */
+.etiqueta-fija {
+    display: inline-block;
+    width: 145px;
+    text-align: right;
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+/* Espaciado derecho para las opciones de radio de estado civil y sexo */
+.caja-ocre input[type="radio"] + label {
+    margin-right: 10px;
+}
+
+/* Cuadro de texto ancho para nombre y domicilio */
+.input-largo {
+    width: 330px;
+    padding: 3px;
+}
+
+/* Cuadro de texto mediano para el correo electrónico */
+.input-medio {
+    width: 180px;
+    padding: 3px;
+}
+
+/* Cuadro de texto corto para el teléfono */
+.input-corto {
+    width: 110px;
+    padding: 3px;
+}
+
+/* Alineación superior con lista múltiple a la derecha para los dispositivos */
+.fila-dispositivos {
+    clear: both;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 15px;
+}
+
+/* Texto en negrita para los enunciados del segundo bloque */
+.negrita {
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+/* Rejilla de 3 columnas para las casillas de actividades favoritas */
+.grid-actividades {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6px 10px;
+    margin-bottom: 15px;
+}
+
+/* Área de texto amplia para explicar el motivo de ingreso */
+.caja-amarilla textarea {
+    width: 75%;
+    padding: 5px;
+    margin-top: 4px;
+    margin-bottom: 12px;
+}
+
+/* Contenedor centrado para los botones del segundo formulario */
+.botones-club {
+    text-align: center;
+    margin: 15px 0 30px 0;
+}
+
+/* Botones marrón oscuro redondeados tipo píldora con sombra */
+.botones-club button {
+    background-color: rgb(80, 63, 35);
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 25px;
+    padding: 10px 90px;
+    font-weight: bold;
+    font-size: 14px;
+    margin: 0 5px;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.35);
+}
+
+/* Pie de página centrado de la actividad de formularios */
+.pie-formularios {
+    text-align: center;
+    font-size: 13px;
+    color: rgb(0, 0, 0);
+    margin-top: 20px;
+}
+
+
+/* Color de fondo granate para el pie de página exclusivo del restaurante */
+footer.footer-restaurante {
+    background-color: rgb(87, 37, 37);
 }
