@@ -653,3 +653,232 @@ body.receta {
     padding: 15px;
     margin-top: 30px;
 }
+
+
+
+
+
+
+/* =========================================================
+   ESTILOS EXCLUSIVOS PARA LOS FORMULARIOS DE LA CULINARIA
+   ========================================================= */
+
+/* 1. Estilo general de toda la página del formulario */
+body.formularios-culinaria {
+    background-color: #461b20; /* Color de fondo burdeos principal de la página */
+    color: #ffffff;            /* Color blanco para todo el texto */
+    font-family: Arial, sans-serif; /* Tipo de letra limpia y legible */
+    margin: 0;                 /* Elimina los márgenes exteriores por defecto del navegador */
+    padding: 0;                /* Elimina los rellenos interiores por defecto */
+}
+
+/* 2. Cabecera superior y título principal (h1) */
+.formularios-culinaria header,
+.formularios-culinaria h1 {
+    background-color: #2b0f12; /* Fondo burdeos muy oscuro para destacar la cabecera */
+    color: #ffffff;            /* Texto del título en color blanco */
+    text-align: center;        /* Centra el título horizontalmente */
+    padding: 20px;             /* Espacio interior arriba, abajo y a los lados */
+    margin: 0;                 /* Quita márgenes alrededor del título */
+}
+
+/* 3. Barra de navegación (nav) y su lista de enlaces (ul) */
+.formularios-culinaria nav,
+.formularios-culinaria nav ul {
+    background-color: #6e2b32; /* Tono burdeos intermedio para la barra del menú */
+    list-style: none;          /* Quita los puntos negros de la lista */
+    display: flex;             /* Coloca los enlaces en fila horizontal (uno al lado del otro) */
+    justify-content: center;   /* Centra los enlaces en medio de la barra */
+    gap: 25px;                 /* Deja una separación de 25px entre cada enlace */
+    padding: 12px;             /* Altura/grosor interior de la barra de navegación */
+    margin: 0;                 /* Elimina márgenes externos */
+}
+
+/* 4. Estilo de los enlaces dentro del menú */
+.formularios-culinaria nav a {
+    color: #ffffff;            /* Color blanco para el texto de los enlaces */
+    text-decoration: none;     /* Quita el subrayado típico de los enlaces */
+    font-weight: bold;         /* Pone la letra en negrita */
+}
+
+/* 5. Efecto al pasar el ratón por encima de los enlaces del menú */
+.formularios-culinaria nav a:hover {
+    text-decoration: underline; /* Muestra un subrayado al pasar el ratón */
+}
+
+/* 6. Contenedor principal donde va metido el formulario */
+.formularios-culinaria main {
+    max-width: 600px;          /* Ancho máximo del formulario para que no ocupe toda la pantalla */
+    margin: 30px auto;         /* 30px de margen arriba/abajo y 'auto' a los lados para centrarlo */
+    padding: 0 15px;           /* Pequeño margen lateral para que no pegue al borde en pantallas pequeñas */
+}
+
+/* 7. Caja recuadrada del formulario (fieldset) */
+.formularios-culinaria fieldset {
+    background-color: #2b0f12; /* Fondo oscuro igual que la cabecera para hacer contraste */
+    border: 1px solid #ffffff; /* Borde fino de color blanco alrededor de la caja */
+    border-radius: 10px;       /* Redondea las esquinas de la caja */
+    padding: 25px;             /* Espacio interior para que los campos no toquen el borde */
+    text-align: left;          /* Alinea las etiquetas y campos a la izquierda */
+}
+
+/* 8. Título incrustado en el borde superior de la caja (legend) */
+.formularios-culinaria legend {
+    background-color: #6e2b32; /* Fondo burdeos medio para que destaque como una etiqueta */
+    color: #ffffff;            /* Texto blanco */
+    padding: 6px 14px;         /* Espacio interior alrededor del texto */
+    border-radius: 6px;        /* Esquinas ligeramente redondeadas */
+    font-weight: bold;         /* Letra en negrita */
+}
+
+/* 9. Etiquetas de cada pregunta (Su nombre, Su correo, etc.) */
+.formularios-culinaria label {
+    font-weight: bold;         /* Pone en negrita el nombre de cada campo */
+}
+
+/* 10. Todos los cuadros de texto, selectores y áreas de mensaje */
+.formularios-culinaria input[type="text"],
+.formularios-culinaria input[type="email"],
+.formularios-culinaria input[type="tel"],
+.formularios-culinaria input[type="date"],
+.formularios-culinaria input[type="time"],
+.formularios-culinaria input[type="number"],
+.formularios-culinaria select,
+.formularios-culinaria textarea {
+    width: 100%;               /* Hace que el campo ocupe todo el ancho disponible de la caja */
+    box-sizing: border-box;    /* Evita que el padding haga que el campo se salga por la derecha */
+    padding: 10px;             /* Hace los cuadros más altos y cómodos para escribir */
+    margin-top: 6px;           /* Separa un poco el cuadro respecto a su etiqueta de arriba */
+    border: 1px solid #6e2b32; /* Borde del mismo tono burdeos */
+    border-radius: 6px;        /* Redondea las esquinas de los cuadros de texto */
+    font-family: Arial, sans-serif; /* Mantiene la misma letra dentro del área de texto */
+}
+
+/* 11. Botones de "Enviar" y "Cancelar" */
+.formularios-culinaria button {
+    background-color: #6e2b32; /* Color de fondo burdeos medio */
+    color: #ffffff;            /* Texto del botón en blanco */
+    border: 1px solid #ffffff; /* Borde blanco fino */
+    padding: 10px 22px;        /* Tamaño interior del botón (alto y ancho) */
+    border-radius: 6px;        /* Esquinas redondeadas */
+    font-weight: bold;         /* Texto en negrita */
+    cursor: pointer;           /* Cambia el puntero del ratón a una manita al pasar por encima */
+    margin-right: 10px;        /* Separa un botón del otro */
+}
+
+/* 12. Efecto al pasar el ratón por encima de los botones */
+.formularios-culinaria button:hover {
+    background-color: #8c3740; /* Ilumina el botón con un tono burdeos más claro */
+}
+
+/* 13. Párrafo informativo que va debajo del formulario */
+.formularios-culinaria main > p {
+    text-align: center;        /* Centra el texto de aviso */
+    font-size: 14px;           /* Letra un poco más discreta */
+    margin-top: 15px;          /* Separación respecto a la caja del formulario */
+}
+
+/* 14. Pie de página inferior (footer) */
+.formularios-culinaria footer {
+    background-color: #2b0f12; /* Fondo burdeos oscuro a juego con la cabecera */
+    color: #ffffff;            /* Texto blanco */
+    text-align: center;        /* Centra el texto del pie de página */
+    padding: 15px;             /* Espacio interior */
+    margin-top: 30px;          /* Separa el pie de página del contenido de arriba */
+}
+
+
+
+
+
+/* =========================================================
+   ESTILOS EXCLUSIVOS PARA EL HORARIO DE LA CULINARIA
+   ========================================================= */
+
+/* 1. Estilo general de toda la página del horario */
+body.horario-culinaria {
+    background-color: #461b20; /* Color de fondo burdeos principal */
+    color: #ffffff;            /* Color blanco para el texto */
+    font-family: Arial, sans-serif; /* Letra limpia y moderna */
+    margin: 0;                 /* Quita los márgenes exteriores por defecto */
+    padding: 0;                /* Quita los rellenos interiores por defecto */
+}
+
+/* 2. Cabecera superior y título principal (h1) */
+.horario-culinaria header,
+.horario-culinaria h1 {
+    background-color: #2b0f12; /* Fondo burdeos muy oscuro para destacar el título */
+    color: #ffffff;            /* Texto del título en blanco */
+    text-align: center;        /* Centra el texto horizontalmente */
+    padding: 20px;             /* Espacio interior alrededor del título */
+    margin: 0;                 /* Elimina márgenes externos */
+}
+
+/* 3. Barra de navegación (nav) y lista del botón volver (ul) */
+.horario-culinaria nav,
+.horario-culinaria nav ul {
+    background-color: #6e2b32; /* Tono burdeos intermedio para la barra del menú */
+    list-style: none;          /* Quita el punto negro de la lista */
+    display: flex;             /* Coloca los elementos centrados en fila */
+    justify-content: center;   /* Centra el enlace en mitad de la barra */
+    padding: 12px;             /* Grosor interior de la barra */
+    margin: 0;                 /* Elimina márgenes externos */
+}
+
+/* 4. Estilo del enlace "Volver a la carta" */
+.horario-culinaria nav a {
+    color: #ffffff;            /* Color blanco para el enlace */
+    text-decoration: none;     /* Quita el subrayado */
+    font-weight: bold;         /* Pone la letra en negrita */
+}
+
+/* 5. Efecto al pasar el ratón por encima del enlace */
+.horario-culinaria nav a:hover {
+    text-decoration: underline; /* Muestra subrayado al pasar el ratón */
+}
+
+/* 6. Estructura principal de la tabla */
+.horario-culinaria table {
+    display: table;            /* Fuerza a que se comporte como tabla real (arregla el texto en línea) */
+    width: 85%;                /* Ocupa el 85% del ancho de la pantalla */
+    max-width: 750px;          /* Ancho máximo para que no se estire demasiado */
+    margin: 35px auto;         /* 35px arriba/abajo y 'auto' a los lados para centrarla */
+    border-collapse: collapse; /* Une los bordes de las celdas para que no salgan dobles */
+    background-color: #2b0f12; /* Fondo burdeos oscuro para el interior de la tabla */
+    border: 2px solid #ffffff; /* Borde exterior blanco */
+}
+
+/* 7. Filas y celdas de la tabla */
+.horario-culinaria tr {
+    display: table-row;        /* Fuerza a que cada <tr> sea una fila real */
+}
+
+.horario-culinaria th,
+.horario-culinaria td {
+    display: table-cell;       /* Fuerza a que cada celda ocupe su columna */
+    border: 1px solid #6e2b32; /* Líneas divisorias en tono burdeos medio */
+    padding: 14px;             /* Espacio interior para que el texto respire */
+    text-align: center;        /* Centra los días y las horas dentro de cada celda */
+}
+
+/* 8. Encabezados de la tabla (Día, Mañana, Tarde-noche) */
+.horario-culinaria th {
+    background-color: #6e2b32; /* Fondo burdeos medio para diferenciar la fila superior */
+    color: #ffffff;            /* Texto blanco */
+    font-weight: bold;         /* Letra en negrita */
+    text-transform: uppercase; /* Convierte los títulos de columna a mayúsculas */
+}
+
+/* 9. Efecto al pasar el ratón por encima de cada día de la semana */
+.horario-culinaria tbody tr:hover {
+    background-color: #3d161b; /* Ilumina suavemente la fila que estás señalando */
+}
+
+/* 10. Pie de página (footer) por si lo tienes abajo */
+.horario-culinaria footer {
+    background-color: #2b0f12; /* Fondo burdeos oscuro */
+    color: #ffffff;            /* Texto blanco */
+    text-align: center;        /* Texto centrado */
+    padding: 15px;             /* Espacio interior */
+    margin-top: 30px;          /* Separación respecto a la tabla */
+}
