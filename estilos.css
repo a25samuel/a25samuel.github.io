@@ -1,659 +1,692 @@
-/*Estilo para h1 de la página*/
-h1{
-  text-align: center;
-  background-color: rgb(0, 106, 192);
-  padding:30px;
-  margin-bottom: 0;
+/* Estilo para h1 de la página */
+h1 {
+    text-align: center;                  /* Centra el texto del título horizontalmente */
+    background-color: rgb(0, 106, 192);  /* Rellena el fondo de azul intenso usando valores RGB */
+    padding: 30px;                       /* Añade 30px de espacio interior alrededor del título */
+    margin-bottom: 0;                    /* Elimina el margen inferior para pegarlo al menú de abajo */
 }
-/*Estilo para las listas no ordernadas de la página*/
+
+/* Estilo para las listas no ordenadas de la página */
 ul {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    background-color: rgb(0, 62, 133);
-    padding: 15px 0;      
-    margin: 0;           
-    list-style: none;
-    text-decoration: none;
+    display: flex;                       /* Coloca los elementos de la lista en fila horizontal */
+    justify-content: center;             /* Centra los elementos en mitad de la barra */
+    gap: 20px;                           /* Deja 20px de separación horizontal entre cada elemento */
+    background-color: rgb(0, 62, 133);   /* Rellena el fondo con un tono azul más oscuro */
+    padding: 15px 0;                     /* 15px de relleno arriba/abajo y 0 a los lados */
+    margin: 0;                           /* Quita los márgenes exteriores por defecto de la lista */
+    list-style: none;                    /* Elimina los puntos negros de viñeta */
+    text-decoration: none;               /* Quita cualquier subrayado del texto */
 }
-/*Estilo para las listas ordenadas*/
+
+/* Estilo para los enlaces dentro de las listas */
 ul a {
-    color: #ffffff;  
-    text-decoration: none;                                               
+    color: #ffffff;                      /* Pone el texto de los enlaces en color blanco */
+    text-decoration: none;               /* Elimina la línea de subrayado típica de los enlaces */
 }
-/*Estilo para configurar la tabla de horario*/
+
+/* Estilo para configurar la tabla de horario */
 table {
-    margin: 20px auto;
-    border-collapse: collapse;
-    text-align: center;
+    margin: 20px auto;                   /* 20px de separación arriba/abajo y 'auto' a los lados para centrarla */
+    border-collapse: collapse;           /* Une los bordes de las celdas para evitar líneas dobles */
+    text-align: center;                  /* Centra el contenido de texto dentro de la tabla */
 }
-/*Estilo para cada celda y fila de la tabla de horario*/
+
+/* Estilo para cada celda y fila de la tabla de horario */
 th, td {
-    padding: 10px 18px;
-    border: 1px solid rgb(180, 180, 180);
+    padding: 10px 18px;                  /* Espacio interior de 10px arriba/abajo y 18px a los lados */
+    border: 1px solid rgb(180, 180, 180); /* Dibuja un borde gris claro de 1px en cada celda */
 }
 
 /* Estilo y colores para el módulo SOR */
-.SOR{
-  color: rgb(255, 255, 255);
-  background-color:rebeccapurple;
+.SOR {
+    color: rgb(255, 255, 255);           /* Color blanco para las letras del módulo */
+    background-color: rebeccapurple;     /* Color de fondo morado */
 }
+
 /* Estilo y colores para el módulo APW */
-.APW{
- color:rgb(255, 255, 255);
- background-color:rgb(131, 84, 84) ;
+.APW {
+    color: rgb(255, 255, 255);           /* Color blanco para las letras del módulo */
+    background-color: rgb(131, 84, 84);  /* Color de fondo marrón rojizo usando valores RGB */
 }
-/* Estilo y colores para el módulo OPW */
-.OPW{
-  color:black;
-  background-color:rgb(235, 216, 109);
+OPW {
+    color: black;                        /* Color negro para las letras del módulo */
+    background-color: rgb(235, 216, 109); /* Color de fondo amarillo claro usando valores RGB */
 }
+
 /* Estilo y colores para el módulo SER */
-.SER{
-  color:maroon;
-  background-color:beige;  
+.SER {
+    color: maroon;                       /* Color granate oscuro para las letras */
+    background-color: beige;             /* Color de fondo beige claro */
 }
+
 /* Estilo y colores para el módulo POI */
 .POI {
-    color: rgb(201, 174, 255);
-    background-color:gray;
+    color: rgb(201, 174, 255);           /* Color lila claro para las letras usando valores RGB */
+    background-color: gray;              /* Color de fondo gris */
 }
+
 /* Estilo y colores para el módulo IPE */
-.IPE{
-   color:rgb(0, 0, 0);
-   background-color: peru;
+.IPE {
+    color: rgb(0, 0, 0);                 /* Color negro puro para las letras usando valores RGB */
+    background-color: peru;              /* Color de fondo marrón claro/tostado */
 }
+
 /* Estilo y colores para el módulo ING */
-.ING{
-   color:rgb(253, 250, 51);
-   background-color: olive;
+.ING {
+    color: rgb(253, 250, 51);            /* Color amarillo brillante para las letras usando valores RGB */
+    background-color: olive;             /* Color de fondo verde oliva */
 }
+
 /* Estilo y colores para el módulo SGI */
-.SGI{
-   color:rgb (20,20,20);
-   background-color: rgb(232,218,239);
+.SGI {
+    color: rgb(20, 20, 20);              /* Color gris muy oscuro (casi negro) para las letras */
+    background-color: rgb(232, 218, 239); /* Color de fondo lavanda muy suave usando valores RGB */
 }
+
 /* Estilo para la columna de las horas */
-.Hora{
-   color:#ffffff;
-   background-color: black;   
+.Hora {
+    color: #ffffff;                      /* Color blanco para las horas en formato hexadecimal */
+    background-color: black;             /* Color de fondo negro */
 }
+
 /* Estilo de encabezado para la columna del lunes */
-.Lunes{
-   color:#ffffff;
-   background-color: black;
+.Lunes {
+    color: #ffffff;                      /* Color blanco para el texto del encabezado */
+    background-color: black;             /* Color de fondo negro */
 }
+
 /* Estilo de encabezado para la columna del martes */
-.Martes{
-   color:#ffffff;
-   background-color: black;
+.Martes {
+    color: #ffffff;                      /* Color blanco para el texto del encabezado */
+    background-color: black;             /* Color de fondo negro */
 }
 /* Estilo de encabezado para la columna del miércoles */
-.Miércoles{
-   color:#ffffff;
-   background-color: black;
+.Miércoles {
+    color: #ffffff;                      /* Color blanco para el texto del encabezado */
+    background-color: black;             /* Color de fondo negro */
 }
+
 /* Estilo de encabezado para la columna del jueves */
-.Jueves{
-   color:#ffffff;
-   background-color: black;
+.Jueves {
+    color: #ffffff;                      /* Color blanco para el texto del encabezado */
+    background-color: black;             /* Color de fondo negro */
 }
+
 /* Estilo de encabezado para la columna del viernes */
-.Viernes{
-   color:#ffffff;
-   background-color: black;
+.Viernes {
+    color: #ffffff;                      /* Color blanco para el texto del encabezado */
+    background-color: black;             /* Color de fondo negro */
 }
+
 /* Diseño general, centrado y tamaño de la tabla del horario */
 table {
-    text-align: center;
-    margin: 30px auto;
-    width: 60%;
-    font-size: 18px;
-    
+    text-align: center;                  /* Centra el texto dentro de todas las celdas */
+    margin: 30px auto;                   /* 30px de margen arriba/abajo y 'auto' a los lados para centrarla */
+    width: 60%;                          /* Hace que la tabla ocupe el 60% del ancho de la pantalla */
+    font-size: 18px;                     /* Tamaño de letra grande (18 píxeles) para mejorar la lectura */
 }
+
 /* Estilo para la celda de la franja horaria de las 8:15 */
-.hora-815H{
-   color: #ffffff;
-   background-color: black;
+.hora-815H {
+    color: #ffffff;                      /* Color blanco para la hora en formato hexadecimal */
+    background-color: black;             /* Color de fondo negro */
 }
+
 /* Estilo para la celda de la franja horaria de las 9:15 */
-.hora-915H{
-   color: #ffffff;
-   background-color: black;
+.hora-915H {
+    color: #ffffff;                      /* Color blanco para la hora en formato hexadecimal */
+    background-color: black;             /* Color de fondo negro */
 }
+
 /* Estilo para la celda de la franja horaria de las 10:15 */
-.hora-1015H{
-   color: #ffffff;
-   background-color: black;
+.hora-1015H {
+    color: #ffffff;                      /* Color blanco para la hora en formato hexadecimal */
+    background-color: black;             /* Color de fondo negro */
 }
+
 /* Estilo para la celda de la franja horaria de las 11:15 */
-.hora-1115H{
-   color: #ffffff;
-   background-color: black;
+.hora-1115H {
+    color: #ffffff;                      /* Color blanco para la hora en formato hexadecimal */
+    background-color: black;             /* Color de fondo negro */
 }
+
 /* Estilo para la celda de la franja horaria de las 11:45 */
-.hora-1145H{
-   color: #ffffff;
-   background-color: black;
+.hora-1145H {
+    color: #ffffff;                      /* Color blanco para la hora en formato hexadecimal */
+    background-color: black;             /* Color de fondo negro */
 }
-/* Estilo para la celda de la franja horaria de las 12:45 */
-.hora-1245H{
-   color: #ffffff;
-   background-color: black;
+
+CSS
+.hora-1245H {
+    color: #ffffff;                      /* Color blanco para la hora en formato hexadecimal */
+    background-color: black;             /* Color de fondo negro */
 }
+
 /* Estilo para la celda de la franja horaria de las 13:45 */
-.hora-1345H{
-   color: #ffffff;
-   background-color: black;
+.hora-1345H {
+    color: #ffffff;                      /* Color blanco para la hora en formato hexadecimal */
+    background-color: black;             /* Color de fondo negro */
 }
 
-/*Estilo para el body de la página*/
-body{
-  background-color: rgb(240,240,240);
-  margin: 0;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+/* Estilo para el body de la página */
+body {
+    background-color: rgb(240, 240, 240); /* Fondo gris muy claro usando valores RGB */
+    margin: 0;                           /* Elimina los márgenes exteriores por defecto del navegador */
+    min-height: 100vh;                   /* Fuerza a que la página ocupe como mínimo el 100% del alto de la pantalla */
+    display: flex;                       /* Activa Flexbox para organizar cabecera, cuerpo y pie en bloque */
+    flex-direction: column;              /* Apila los elementos principales en vertical (de arriba abajo) */
 }
-/*Estilo para el main de la página*/
-main{
- text-align: center;
+
+/* Estilo para el main de la página */
+main {
+    text-align: center;                  /* Centra horizontalmente el contenido principal */
 }
-/*Estilo para el footer de la página*/
-footer{
-background-color: rgb(0, 106, 192);
-color: #ffffff;
-padding: 10px;
-margin-top: auto;
+
+/* Estilo para el footer de la página */
+footer {
+    background-color: rgb(0, 106, 192);  /* Rellena el fondo del pie de página en azul intenso */
+    color: #ffffff;                      /* Pone las letras del pie de página en blanco */
+    padding: 10px;                       /* Espacio interior de 10px alrededor del texto */
+    margin-top: auto;                    /* Empuja el footer siempre hacia el borde inferior de la pantalla */
 }
-/*Estilo para la clase tarjeta-central*/
-.tarjeta-central{
-background-color: rgb(255, 255, 255);
-    width: 92%;
-    max-width: 1100px;
-    margin: 20px auto;
-    padding: 25px 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
+
+/* Estilo para la clase tarjeta-central */
+.tarjeta-central {
+    background-color: rgb(255, 255, 255); /* Fondo blanco puro para destacar la tarjeta sobre el gris */
+    width: 92%;                          /* Ocupa el 92% del ancho disponible en pantallas pequeñas */
+    max-width: 1100px;                   /* Limita el ancho máximo a 1100px en pantallas grandes */
+    margin: 20px auto;                   /* 20px de margen arriba/abajo y 'auto' a los lados para centrarla */
+    padding: 25px 20px;                  /* Espacio interior: 25px arriba/abajo y 20px a los lados */
+    border-radius: 8px;                  /* Redondea suavemente las esquinas de la tarjeta */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Añade una sombra sutil alrededor para dar efecto de elevación */
+    text-align: center;                  /* Centra el texto dentro de la tarjeta */
 }
-/*Estilo para la pagina princiapl para Volver-inicio*/
-.volver-inicio{
- display: block;
- background-color: rgb(21, 97, 197);
- text-align: center;
- color: #ffffff;
- text-decoration: none;
- margin-top: 400px;
- padding: 10px;
-} 
+
+/* Estilo para la página principal para Volver-inicio */
+.volver-inicio {
+    display: block;                      /* Convierte el enlace en un bloque para que ocupe todo el ancho */
+    background-color: rgb(21, 97, 197);  /* Rellena el fondo en color azul usando valores RGB */
+    text-align: center;                  /* Centra el texto del enlace horizontalmente */
+    color: #ffffff;                      /* Pone las letras en color blanco */
+    text-decoration: none;               /* Quita el subrayado típico de los enlaces */
+    margin-top: 400px;                   /* Empuja el botón 400px hacia abajo respecto al elemento superior */
+    padding: 10px;                       /* Añade 10px de espacio interior alrededor del texto */
+}
+
+/* Regla general para centrar las imágenes de la web */
 img {
-    display: block;
-    margin: 175px auto;
+    display: block;            /* Convierte la imagen en bloque para poder centrarla */
+    margin: 175px auto;        /* 175px arriba/abajo y 'auto' a los lados para centrarla */
 }
 
-body.culinaria{
-  background-color: #461b20;
-  color:#ffffff;
-  font-family: Arial, sans-serif;
-  text-align: center;
+/* Estilo base para las páginas con class="culinaria" */
+body.culinaria {
+    background-color: #461b20; /* Fondo burdeos principal del restaurante */
+    color: #ffffff;            /* Color blanco para todo el texto */
+    font-family: Arial, sans-serif; /* Tipo de letra limpia */
+    text-align: center;        /* Centra el texto horizontalmente */
 }
 
+/* Cabecera y título principal en burdeos muy oscuro */
 .culinaria header,
 .culinaria h1 {
-    background-color: #2b0f12;
+    background-color: #2b0f12; /* Tono burdeos oscuro para destacar la parte superior */
 }
 
+/* Barra de navegación y su lista de enlaces */
 .culinaria nav,
 .culinaria nav ul {
-    background-color: #6e2b32;
+    background-color: #6e2b32; /* Tono burdeos intermedio para el menú */
 }
+
+/* Diseño con forma de botón para el enlace de volver */
 .culinaria .boton-volver {
-    display: block;
-    width: fit-content;
-    margin: 25px auto;
-    padding: 10px 20px;
-    background-color: #2b0f12;
-    color: #ffffff;
-    text-decoration: none;
-    border-radius: 6px;
+    display: block;            /* Hace que el enlace se comporte como una caja */
+    width: fit-content;        /* Ajusta el ancho de la caja exactamente al tamaño del texto */
+    margin: 25px auto;         /* 25px de separación arriba/abajo y centrado a los lados */
+    padding: 10px 20px;        /* Espacio interior para darle cuerpo de botón */
+    background-color: #2b0f12; /* Fondo burdeos oscuro */
+    color: #ffffff;            /* Letras en color blanco */
+    text-decoration: none;     /* Quita el subrayado del enlace */
+    border-radius: 6px;        /* Redondea las esquinas del botón */
 }
 
-.culinaria footer{
-    text-align: center;
-     font-family: 'Times New Roman', Times, serif;
+/* Pie de página inferior */
+.culinaria footer {
+    text-align: center;        /* Centra el texto del pie de página */
+    font-family: 'Times New Roman', Times, serif; /* Cambia el tipo de letra */
 }
 
+/* Marco decorativo para la foto principal del restaurante */
 .culinaria .foto-restaurante {
-    background-color: #2b0f12;
-    border: 1px solid #ffffff;
-    border-radius: 10px;
-    padding: 5px;
-    width: fit-content;
-    margin:120px auto;
-    text-align: center;
-    box-shadow: 5px 5px 15px black;
+    background-color: #2b0f12; /* Color del marco interior */
+    border: 1px solid #ffffff; /* Línea de borde blanca de 1px */
+    border-radius: 10px;       /* Esquinas redondeadas */
+    padding: 5px;              /* Grosor del marco entre la foto y el borde blanco */
 }
 
+/* Imagen interior dentro del marco de foto del restaurante */
 .culinaria .foto-restaurante img {
-    margin: 0 auto 10px auto; 
-    border-radius: 5px;
+    margin: 0 auto 10px auto;  /* Sin margen arriba, centrada a los lados y 10px abajo */
+    border-radius: 5px;        /* Redondea suavemente las esquinas de la foto */
 }
 
+/* Pie de foto debajo de la imagen */
 .culinaria figcaption {
-    font-style: italic;
-    font-size: 14px;
-    color: #e0e0e0;
+    font-style: italic;        /* Pone el texto en cursiva */
+    font-size: 14px;           /* Tamaño de letra un poco más pequeño */
+    color: #e0e0e0;            /* Color gris claro para diferenciarlo del texto principal */
 }
 
-
+/* Párrafo o subtítulo dentro de la cabecera */
 .culinaria header p {
-    text-align: center;
-    margin-top: 5px;
-    color: #e0e0e0;
+    text-align: center;        /* Centra el texto horizontalmente */
+    margin-top: 5px;           /* Pequeña separación respecto al título h1 */
+    color: #e0e0e0;            /* Color gris claro */
 }
 
-
+/* Títulos de sección principales (h2) */
 .culinaria h2 {
-    background-color: #2b0f12;
-    color: #ffffff;
-    border-bottom: 2px solid #ffffff;
-    margin-top: 40px;
+    background-color: #2b0f12; /* Fondo burdeos oscuro */
+    color: #ffffff;            /* Letras en blanco */
+    border-bottom: 2px solid #ffffff; /* Línea blanca decorativa en la parte inferior */
+    margin-top: 40px;          /* Espacio amplio arriba para separar secciones */
 }
 
+/* Subtítulos (h3) */
 .culinaria h3 {
-    background-color: transparent;
-    color: #ffffff;
-    text-align: center;
-    font-size: 20px;
-    margin-bottom: 10px;
+    background-color: transparent; /* Fondo transparente (sin caja de color) */
+    color: #ffffff;            /* Texto blanco */
+    text-align: center;        /* Texto centrado */
+    font-size: 20px;           /* Tamaño de letra de 20 píxeles */
+    margin-bottom: 10px;       /* Separación de 10px por debajo */
 }
 
-
+/* Tarjetas o bloques de contenido (platos, secciones) */
 .culinaria article {
-    background-color: #2b0f12;
-    border: 1px solid #ffffff;
-    border-radius: 10px;
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 700px;
-    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.5);
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #2b0f12; /* Fondo burdeos muy oscuro */
+    border: 1px solid #ffffff; /* Borde blanco fino de 1px */
+    border-radius: 10px;       /* Esquinas redondeadas */
+    padding: 20px;             /* Espacio interior alrededor del contenido */
+    margin: 20px auto;         /* 20px arriba/abajo y centrada horizontalmente */
+    max-width: 700px;          /* Ancho máximo de 700px para que no ocupe toda la pantalla */
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.5); /* Sombra paralela para dar profundidad */
+    font-family: Georgia, 'Times New Roman', Times, serif; /* Letra elegante tipo carta */
 }
 
-
+/* Botones de enlace dentro de las tarjetas (ej. "Ver receta") */
 .culinaria article a {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 8px 15px;
-    background-color: #6e2b32;
-    color: #ffffff;
-    text-decoration: none;
-    border-radius: 5px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: inline-block;     /* Permite dar margen y relleno al enlace como una caja */
+    margin-top: 10px;          /* Separación respecto al texto superior */
+    padding: 8px 15px;         /* Tamaño interior del botón (alto y ancho) */
+    background-color: #6e2b32; /* Color de fondo burdeos medio */
+    color: #ffffff;            /* Letras en blanco */
+    text-decoration: none;     /* Quita el subrayado del enlace */
+    border-radius: 5px;        /* Esquinas ligeramente redondeadas */
+    font-family: Georgia, 'Times New Roman', Times, serif; /* Fuente clásica */
 }
 
+/* Efecto visual al pasar el ratón por encima del botón */
 .culinaria article a:hover {
-    background-color: #8c3740;
+    background-color: #8c3740; /* Ilumina el botón con un burdeos más claro */
 }
 
+/* Párrafos sueltos que van directamente dentro de una sección */
 .culinaria section > p {
-    text-align: center;
-    margin: 15px 0;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;        /* Centra el párrafo horizontalmente */
+    margin: 15px 0;            /* 15px de margen arriba y abajo, 0 a los lados */
+    font-family: Georgia, 'Times New Roman', Times, serif; /* Fuente clásica */
 }
 
-
+/* Lista de enlaces del menú de navegación */
 .culinaria nav ul {
-    display: flex;
-    flex-wrap: wrap;          
-    justify-content: center;  
-    gap: 10px 18px;           
-    padding: 12px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;             /* Coloca los enlaces en fila horizontal */
+    flex-wrap: wrap;           /* Permite que bajen a otra línea si no caben en pantalla */
+    justify-content: center;   /* Centra los enlaces en mitad de la barra */
+    gap: 10px 18px;            /* 10px de separación vertical y 18px horizontal */
+    padding: 12px;             /* Espacio interior de la barra */
+    font-family: Georgia, 'Times New Roman', Times, serif; /* Fuente clásica */
 }
 
 
 /* Quita la franja azul del pie de página específico de La Culinaria */
 footer.culinaria {
-    background-color: transparent;
+    background-color: transparent; /* Hace transparente el fondo para que se vea el color burdeos de la página */
 }
-
 
 /* Título principal centrado del primer formulario */
 .titulo-inscripcion {
-    text-align: center;
-    font-size: 20px;
-    margin-bottom: 15px;
+    text-align: center;        /* Centra el texto horizontalmente */
+    font-size: 20px;           /* Pone el tamaño de letra a 20 píxeles */
+    margin-bottom: 15px;       /* Deja 15px de separación por debajo respecto al formulario */
 }
 
 /* Estilo común de los bloques fieldset del primer formulario */
 .form-inscripcion fieldset {
-    border: 1px solid rgb(0, 0, 0);
-    padding: 15px;
-    margin-bottom: 12px;
+    border: 1px solid rgb(0, 0, 0); /* Dibuja un borde negro fino de 1px alrededor de cada caja */
+    padding: 15px;                  /* Espacio interior entre el borde y los campos del formulario */
+    margin-bottom: 12px;            /* Separa cada bloque fieldset del siguiente con 12px */
 }
 
 /* Etiquetas legend en caja blanca con borde negro */
 .form-inscripcion legend {
-    background-color: rgb(255, 255, 255);
-    border: 1px solid rgb(0, 0, 0);
-    padding: 2px 8px;
-    font-size: 14px;
+    background-color: rgb(255, 255, 255); /* Relleno de color blanco puro para el título de la caja */
+    border: 1px solid rgb(0, 0, 0);       /* Borde negro fino de 1px alrededor del título */
+    padding: 2px 8px;                     /* 2px de relleno arriba/abajo y 8px a los lados */
+    font-size: 14px;                      /* Tamaño de letra más compacto (14 píxeles) */
 }
 
 /* Fondo gris para Datos personales */
 .caja-gris {
-    background-color: rgb(179, 179, 179);
+    background-color: rgb(179, 179, 179); /* Color gris medio usando valores RGB */
 }
 
 /* Fondo salmón para Forma de acceso */
 .caja-salmon {
-    background-color: rgb(255, 184, 131);
+    background-color: rgb(255, 184, 131); /* Color naranja claro / salmón usando valores RGB */
 }
 
 /* Fondo granate suave para Documentos adjuntados */
 .caja-granate {
-    background-color: rgb(160, 113, 113);
+    background-color: rgb(160, 113, 113); /* Color granate apagado usando valores RGB */
 }
 
 /* Rejilla de 3 columnas para alinear los campos de Datos personales */
 .grid-datos {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px 15px;
-    font-size: 14px;
+    display: grid;                      /* Activa el diseño en cuadrícula (CSS Grid) */
+    grid-template-columns: repeat(3, 1fr); /* Divide el espacio en 3 columnas exactamente iguales */
+    gap: 10px 15px;                     /* Deja 10px de separación entre filas y 15px entre columnas */
+    font-size: 14px;                    /* Tamaño de letra de 14 píxeles para las etiquetas */
 }
 
 /* Hace que el campo Dirección ocupe el ancho de dos columnas */
 .col-doble {
-    grid-column: span 2;
+    grid-column: span 2;                /* Estira este elemento para que abarque 2 columnas seguidas */
 }
 
 /* Ancho completo para los cuadros de texto y select de Datos personales */
 .grid-datos input,
 .grid-datos select {
-    width: 100%;
-    padding: 3px;
-    margin-top: 2px;
-    border: 1px solid rgb(130, 130, 130);
-    background-color: rgb(255, 255, 255);
+    width: 100%;                        /* Hace que el campo rellene todo el ancho de su celda */
+    padding: 3px;                       /* Pequeño espacio interior para que el texto no toque el borde */
+    margin-top: 2px;                    /* Separa el campo 2px respecto a su etiqueta de arriba */
+    border: 1px solid rgb(130, 130, 130); /* Dibuja un borde gris medio de 1px */
+    background-color: rgb(255, 255, 255); /* Rellena el interior del campo en blanco puro */
 }
 
 /* Separación vertical entre las opciones de Forma de acceso */
 .caja-salmon p {
-    margin: 4px 0 4px 25px;
-    font-size: 14px;
+    margin: 4px 0 4px 25px;             /* Márgenes: 4px arriba, 0 derecha, 4px abajo y 25px a la izquierda */
+    font-size: 14px;                    /* Tamaño de letra de 14 píxeles */
 }
 
 /* Sangría hacia la derecha para las subopciones de Directo */
 .caja-salmon p.indentado {
-    margin-left: 55px;
+    margin-left: 55px;                  /* Desplaza estas opciones 55px hacia la derecha para marcar jerarquía */
 }
 
 /* Rejilla de 2 columnas para las casillas de Documentos adjuntados */
 .grid-docs {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 8px;
-    font-size: 14px;
+    display: grid;                      /* Activa el diseño en cuadrícula (CSS Grid) */
+    grid-template-columns: 1fr 2fr;     /* Crea 2 columnas: la segunda es el doble de ancha que la primera */
+    gap: 8px;                           /* Deja 8px de separación entre todas las filas y columnas */
+    font-size: 14px;                    /* Tamaño de letra de 14 píxeles */
 }
 
 /* Centrado de los botones del primer formulario */
 .botones-inscripcion {
-    text-align: center;
-    margin: 15px 0 45px 0;
+    text-align: center;               /* Centra horizontalmente los botones dentro del contenedor */
+    margin: 15px 0 45px 0;            /* Márgenes: 15px arriba, 0 derecha, 45px abajo y 0 izquierda */
 }
 
 /* Diseño rectangular clásico de los botones del primer formulario */
 .botones-inscripcion button {
-    padding: 5px 12px;
-    font-size: 15px;
-    margin: 0 3px;
-    cursor: pointer;
+    padding: 5px 12px;                /* 5px de relleno arriba/abajo y 12px a los lados */
+    font-size: 15px;                  /* Tamaño de letra de 15 píxeles */
+    margin: 0 3px;                    /* Deja 3px de separación a cada lado entre un botón y otro */
+    cursor: pointer;                  /* Cambia el puntero del ratón a una manita al pasar por encima */
 }
-
 
 
 /* --- ESTILOS DEL SEGUNDO FORMULARIO (CUESTIONARIO DEL CLUB) --- */
 
 /* Título en cursiva con sombra suave del segundo formulario */
 .titulo-club {
-    text-align: center;
-    font-style: italic;
-    font-size: 20px;
-    margin-bottom: 15px;
-    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.25);
+    text-align: center;               /* Centra el título horizontalmente */
+    font-style: italic;               /* Pone el texto en letra cursiva */
+    font-size: 20px;                  /* Tamaño de letra de 20 píxeles */
+    margin-bottom: 15px;              /* Separa el título 15px del formulario de abajo */
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.25); /* Añade una sombra suave detrás de las letras */
 }
 
 /* Diseño base de las cajas asimétricas con sombra del segundo formulario */
 .form-club fieldset {
-    border: none;
-    border-radius: 35px 0 35px 0;
-    padding: 20px 30px;
-    margin-bottom: 20px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.35);
-    font-size: 14px;
+    border: none;                     /* Elimina el borde clásico por defecto de los fieldset */
+    border-radius: 35px 0 35px 0;     /* Redondea solo la esquina superior izquierda e inferior derecha (35px) */
+    padding: 20px 30px;               /* Espacio interior: 20px arriba/abajo y 30px a los lados */
+    margin-bottom: 20px;              /* Separa cada caja 20px de la siguiente */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.35); /* Crea una sombra paralela alrededor de la caja */
+    font-size: 14px;                  /* Tamaño de letra de 14 píxeles para su contenido */
 }
 
 /* Etiquetas legend alineadas a la derecha y en cursiva */
 .form-club legend {
-    float: right;
-    font-style: italic;
-    font-size: 14px;
-    margin-bottom: 10px;
+    float: right;                     /* Desplaza el título de la caja hacia el lado derecho */
+    font-style: italic;               /* Pone el texto en letra cursiva */
+    font-size: 14px;                  /* Tamaño de letra de 14 píxeles */
+    margin-bottom: 10px;              /* Deja 10px de espacio por debajo respecto a los campos */
 }
 
 /* Fondo ocre dorado para el bloque de Datos personales */
 .caja-ocre {
-    background-color: rgb(226, 173, 80);
+    background-color: rgb(226, 173, 80); /* Color ocre dorado claro usando valores RGB */
 }
 
 /* Fondo amarillo cálido para Otra información de interés */
 .caja-amarilla {
-    background-color: rgb(201, 151, 51);
+    background-color: rgb(201, 151, 51); /* Color amarillo mostaza/cálido usando valores RGB */
 }
 
 /* Separación vertical entre cada fila de Datos personales */
 .caja-ocre p {
-    clear: both;
-    margin-bottom: 7px;
+    clear: both;                         /* Evita que el párrafo se monte sobre elementos flotantes (como el legend) */
+    margin-bottom: 7px;                  /* Deja 7px de separación por debajo respecto a la siguiente fila */
 }
 
 /* Etiquetas alineadas a la derecha y en negrita en Datos personales */
 .etiqueta-fija {
-    display: inline-block;
-    width: 145px;
-    text-align: right;
-    font-weight: bold;
-    margin-right: 8px;
+    display: inline-block;               /* Permite darle un ancho fijo manteniendo el texto en la misma línea que el input */
+    width: 145px;                        /* Fija el ancho de todas las etiquetas a 145px para que los cuadros queden alineados */
+    text-align: right;                   /* Alinea el texto de la etiqueta hacia la derecha, pegado a su cuadro */
+    font-weight: bold;                   /* Pone el texto de la etiqueta en negrita */
+    margin-right: 8px;                   /* Deja 8px de espacio entre la etiqueta y el cuadro de texto */
 }
 
 /* Espaciado derecho para las opciones de radio de estado civil y sexo */
 .caja-ocre input[type="radio"] + label {
-    margin-right: 10px;
+    margin-right: 10px;                  /* Separa 10px la etiqueta de cada opción respecto al siguiente botón circular */
 }
 
 /* Cuadro de texto ancho para nombre y domicilio */
 .input-largo {
-    width: 330px;
-    padding: 3px;
+    width: 330px;                        /* Define un ancho largo de 330px para datos extensos */
+    padding: 3px;                        /* Pequeño relleno interior de 3px para mayor comodidad al escribir */
 }
 
 /* Cuadro de texto mediano para el correo electrónico */
 .input-medio {
-    width: 180px;
-    padding: 3px;
+    width: 180px;                        /* Define un ancho intermedio de 180px */
+    padding: 3px;                        /* Pequeño relleno interior de 3px */
 }
 
 /* Cuadro de texto corto para el teléfono */
 .input-corto {
-    width: 110px;
-    padding: 3px;
+    width: 110px;                        /* Define un ancho compacto de 110px ideal para números de teléfono */
+    padding: 3px;                        /* Pequeño espacio interior de 3px alrededor del texto */
 }
 
 /* Alineación superior con lista múltiple a la derecha para los dispositivos */
 .fila-dispositivos {
-    clear: both;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    margin-bottom: 15px;
+    clear: both;                         /* Evita que esta fila se solape con elementos flotantes anteriores */
+    display: flex;                       /* Coloca la etiqueta y la lista múltiple en una misma fila flexible */
+    justify-content: space-between;      /* Empuja un elemento hacia la izquierda y el otro hacia la derecha */
+    align-items: flex-end;               /* Alinea los elementos respecto a su borde inferior */
+    margin-bottom: 15px;                 /* Deja 15px de separación por debajo respecto al siguiente bloque */
 }
 
 /* Texto en negrita para los enunciados del segundo bloque */
 .negrita {
-    font-weight: bold;
-    margin-bottom: 6px;
+    font-weight: bold;                   /* Aplica grosor de negrita al texto */
+    margin-bottom: 6px;                  /* Separa el enunciado 6px de las opciones de abajo */
 }
 
 /* Rejilla de 3 columnas para las casillas de actividades favoritas */
 .grid-actividades {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 6px 10px;
-    margin-bottom: 15px;
+    display: grid;                       /* Activa el diseño en cuadrícula (CSS Grid) */
+    grid-template-columns: repeat(3, 1fr); /* Divide el ancho disponible en 3 columnas iguales */
+    gap: 6px 10px;                       /* Deja 6px de separación vertical entre filas y 10px horizontal entre columnas */
+    margin-bottom: 15px;                 /* Separa la cuadrícula 15px del siguiente elemento */
 }
 
 /* Área de texto amplia para explicar el motivo de ingreso */
 .caja-amarilla textarea {
-    width: 75%;
-    padding: 5px;
-    margin-top: 4px;
-    margin-bottom: 12px;
+    width: 75%;                          /* Hace que el cuadro de texto ocupe el 75% del ancho de la caja */
+    padding: 5px;                        /* Espacio interior de 5px para que el texto no pegue a los bordes */
+    margin-top: 4px;                     /* Separa 4px el cuadro respecto a su etiqueta superior */
+    margin-bottom: 12px;                 /* Deja 12px de margen inferior */
 }
 
 /* Contenedor centrado para los botones del segundo formulario */
 .botones-club {
-    text-align: center;
-    margin: 15px 0 30px 0;
+    text-align: center;                  /* Centra horizontalmente los botones dentro del bloque */
+    margin: 15px 0 30px 0;               /* Márgenes: 15px arriba, 0 derecha, 30px abajo y 0 izquierda */
 }
 
 /* Botones marrón oscuro redondeados tipo píldora con sombra */
+/* Diseño redondeado y ancho de los botones del segundo formulario */
 .botones-club button {
-    background-color: rgb(80, 63, 35);
-    color: rgb(255, 255, 255);
-    border: none;
-    border-radius: 25px;
-    padding: 10px 90px;
-    font-weight: bold;
-    font-size: 14px;
-    margin: 0 5px;
-    cursor: pointer;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.35);
+    background-color: rgb(80, 63, 35);   /* Color marrón oscuro de fondo usando valores RGB */
+    color: rgb(255, 255, 255);           /* Letras en color blanco puro */
+    border: none;                        /* Elimina el borde gris por defecto de los botones */
+    border-radius: 25px;                 /* Redondea mucho los bordes para darles forma de píldora */
+    padding: 10px 90px;                  /* 10px de alto y 90px a los lados para hacer botones muy anchos */
+    font-weight: bold;                   /* Pone el texto del botón en negrita */
+    font-size: 14px;                     /* Tamaño de letra de 14 píxeles */
+    margin: 0 5px;                       /* Separa 5px a cada lado entre un botón y otro */
+    cursor: pointer;                     /* Cambia el puntero del ratón a una manita al pasar por encima */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.35); /* Sombra suave debajo y a la derecha para dar relieve */
 }
 
 /* Pie de página centrado de la actividad de formularios */
 .pie-formularios {
-    text-align: center;
-    font-size: 13px;
-    color: rgb(0, 0, 0);
-    margin-top: 20px;
+    text-align: center;                  /* Centra horizontalmente el texto del pie de página */
+    font-size: 13px;                     /* Tamaño de letra discreto de 13 píxeles */
+    color: rgb(0, 0, 0);                 /* Color negro puro para el texto */
+    margin-top: 20px;                    /* Deja 20px de separación respecto al contenido de arriba */
 }
-
 
 /* Color de fondo granate para el pie de página exclusivo del restaurante */
 footer.footer-restaurante {
-    background-color: rgb(54, 19, 19);
+    background-color: rgb(54, 19, 19);   /* Fondo granate muy oscuro usando valores RGB */
 }
 
 /* === ESTILOS SEPARADOS PARA LAS RECETAS (.receta) === */
 body.receta {
-    background-color: #461b20;
-    color: #ffffff;
-    font-family: Arial, sans-serif;
-    text-align: left;
+    background-color: #461b20;           /* Fondo burdeos principal de la página de receta */
+    color: #ffffff;                      /* Color blanco para el texto general */
+    font-family: Arial, sans-serif;      /* Tipo de letra limpia y legible */
+    text-align: left;                    /* Alinea el texto a la izquierda para facilitar la lectura de pasos */
 }
 
+/* Cabecera y títulos principales de las recetas */
 .receta header,
 .receta h1,
 .receta h2 {
-    background-color: #2b0f12;
-    color: #ffffff;
-    text-align: center;
+    background-color: #2b0f12;           /* Fondo burdeos muy oscuro para destacar los encabezados */
+    color: #ffffff;                      /* Texto en color blanco */
+    text-align: center;                  /* Centra los títulos horizontalmente */
 }
-
+/* Barra de navegación y lista de enlaces en las páginas de receta */
 .receta nav,
 .receta nav ul {
-    background-color: #6e2b32;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+    background-color: #6e2b32;           /* Tono burdeos intermedio para la barra del menú */
+    display: flex;                       /* Coloca los enlaces en fila horizontal */
+    justify-content: center;             /* Centra los enlaces en mitad de la barra */
+    gap: 20px;                           /* Deja 20px de separación entre cada enlace */
 }
 
+/* Tarjeta principal donde va el contenido de la receta */
 .receta article {
-    background-color: #2c1212;
-    border: 1px solid #ffffff;
-    border-radius: 10px;
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 700px;
+    background-color: #2c1212;           /* Fondo burdeos muy oscuro para destacar el contenido */
+    border: 1px solid #ffffff;           /* Borde fino de color blanco alrededor de la caja */
+    border-radius: 10px;                 /* Redondea las esquinas de la tarjeta */
+    padding: 20px;                       /* Espacio interior para que el texto no toque el borde */
+    margin: 20px auto;                   /* 20px arriba/abajo y 'auto' a los lados para centrarla */
+    max-width: 700px;                    /* Ancho máximo de 700px para facilitar la lectura */
 }
 
 /* Aquí pisamos la barra azul de los <ul> generales */
 .receta article ul,
 .receta article ol {
-    background-color: transparent;
-    display: block;
-    padding-left: 25px;
-    line-height: 1.6;
+    background-color: transparent;       /* Quita cualquier color de fondo heredado */
+    display: block;                      /* Muestra la lista como un bloque vertical normal */
+    padding-left: 25px;                  /* Sangría izquierda de 25px para que quepan las viñetas o números */
+    line-height: 1.6;                    /* Aumenta el interlineado para leer mejor los ingredientes y pasos */
 }
 
+/* Elementos individuales de las listas de ingredientes y preparación */
 .receta article li {
-    display: list-item;
-    margin-bottom: 6px;
+    display: list-item;                  /* Fuerza a que vuelvan a verse los puntos o números de cada paso */
+    margin-bottom: 6px;                  /* Deja 6px de separación entre un ingrediente/paso y el siguiente */
 }
 
+/* Fotografía del plato dentro de la receta */
 .receta article img {
-    margin: 20px auto;
-    border-radius: 10px;
-    border: 2px solid #ffffff;
+    margin: 20px auto;                   /* 20px arriba/abajo y centrada horizontalmente */
+    border-radius: 10px;                 /* Redondea las esquinas de la foto */
+    border: 2px solid #ffffff;           /* Marco blanco de 2px alrededor de la imagen */
 }
-
-
 
 /* Convertir los 3 enlaces finales de la receta en botones visibles */
 .receta article p a {
-    display: inline-block;
-    background-color: #551c22;
-    color: #ffffff;
-    text-decoration: none;
-    padding: 8px 16px;
-    border-radius: 6px;
-    margin-top: 6px;
-    font-weight: bold;
+    display: inline-block;               /* Permite darle relleno y tamaño como si fuera una caja */
+    background-color: #551c22;           /* Color de fondo burdeos oscuro */
+    color: #ffffff;                      /* Letras en blanco */
+    text-decoration: none;               /* Quita el subrayado típico de los enlaces */
+    padding: 8px 16px;                   /* 8px de relleno arriba/abajo y 16px a los lados */
+    border-radius: 6px;                  /* Esquinas ligeramente redondeadas */
 }
-
+/* Efecto al pasar el ratón por encima de los botones finales de la receta */
 .receta article p a:hover {
-    background-color: #421b1f;
+    background-color: #421b1f;           /* Oscurece ligeramente el botón al pasar el cursor por encima */
 }
 
 /* Dar estilo al bloque "Consejo de La Culinaria" (<aside>) */
 .receta aside {
-    background-color: #330f12;
-    border-left: 4px solid #ffffff;
-    border-radius: 8px;
-    padding: 15px 20px;
-    margin: 20px auto;
-    max-width: 700px;
-    text-align: center;
+    background-color: #330f12;           /* Fondo burdeos oscuro para diferenciar la nota del resto de la receta */
+    border-left: 4px solid #ffffff;      /* Línea vertical blanca gruesa en el borde izquierdo para destacarlo */
+    border-radius: 8px;                  /* Redondea ligeramente las esquinas de la caja */
+    padding: 15px 20px;                  /* Espacio interior: 15px arriba/abajo y 20px a los lados */
+    margin: 20px auto;                   /* 20px de separación arriba/abajo y centrado horizontalmente */
+    max-width: 700px;                    /* Limita el ancho máximo a 700px para que coincida con la tarjeta de arriba */
+    text-align: center;                  /* Centra el texto del consejo horizontalmente */
 }
 
+/* Título interior dentro del bloque de consejo */
 .receta aside h3 {
-    background-color: transparent;
-    color: #ffffff;
-    margin-bottom: 8px;
+    background-color: transparent;       /* Quita cualquier fondo heredado para que se vea el color del aside */
+    color: #ffffff;                      /* Texto del subtítulo en blanco puro */
+    margin-bottom: 8px;                  /* Deja 8px de separación por debajo respecto al texto del consejo */
 }
 
 /* Quitar el fondo azul del footer y ponerlo burdeos oscuro */
 .receta footer {
-    background-color: #251012;
-    color: #ffffff;
-    text-align: center;
-    padding: 15px;
-    margin-top: 30px;
+    background-color: #251012;           /* Fondo burdeos muy oscuro para cerrar la página */
+    color: #ffffff;                      /* Letras en color blanco */
+    text-align: center;                  /* Centra el texto del pie de página */
+    padding: 15px;                       /* Espacio interior alrededor del texto */
+    margin-top: 30px;                    /* Separa 30px el pie de página del contenido superior */
 }
-
 
 
 
