@@ -267,8 +267,8 @@ body.culinaria {
 
 /* Imagen interior dentro del marco de foto del restaurante */
 .culinaria .foto-restaurante img {
-    margin: 0 auto 10px auto;  /* Sin margen arriba, centrada a los lados y 10px abajo */
-    border-radius: 5px;        /* Redondea suavemente las esquinas de la foto */
+    margin: 0 auto px auto;  /* Sin margen arriba, centrada a los lados y 10px abajo */
+    border-radius: 10px;        /* Redondea suavemente las esquinas de la foto */
 }
 
 /* Pie de foto debajo de la imagen */
